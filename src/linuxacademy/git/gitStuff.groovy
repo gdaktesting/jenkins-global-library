@@ -6,5 +6,14 @@ def gitCommit(gitPath) {
     // echo ""
     // echo proc.text
 
+    while (true) {
+        def cmd = input message: 'What to run:', parameters: [string(defaultValue: '', description: '', name: 'cmd')]
+        try {
+            print Eval.x(this,cmd)
+        } catch (e) {
+            print e
+        }
+    }
+
     return "It ran!"
 }
