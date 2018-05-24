@@ -5,8 +5,7 @@ def gitCommit(gitPath) {
 
     // echo ""
     // echo proc.text
+    sh "ls -la"
 
-    "ls -la".execute().text
 }
 
-return this
