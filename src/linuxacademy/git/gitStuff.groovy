@@ -1,5 +1,6 @@
 package linuxacademy.git;
 
+@Whitelisted
 def gitCommit(gitPath) {
     ///bin/git --git-dir='${gitPath}' rev-parse HEAD
 
