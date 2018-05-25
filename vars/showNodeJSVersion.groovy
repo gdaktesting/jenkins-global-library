@@ -4,6 +4,9 @@ def call(String nodeENV = "NodeJS_8.11.2") {
     env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
     // on windows
     env.PATH="${env.NODEJS_HOME};${env.PATH}"
+
+    echo "env.NODEJS_HOME: ${env.NODEJS_HOME}"
+    echo "env.PATH: ${env.PATH}"
     sh 'node --version'
     sh 'npm --version'
     sh 'gulp --version'
