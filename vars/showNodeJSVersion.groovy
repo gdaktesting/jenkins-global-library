@@ -1,6 +1,6 @@
 def installTools() {
     // Install tools
-    def nodeHome = tool(name: 'Node')
+    def nodeHome = tool(name: 'NodeJS_8.11.2')
     return [
             "PATH+NODE=${nodeHome}/bin",
     ]
